@@ -16,7 +16,7 @@
         'hr',
         'purchase',
         'stock',
-        'stock_operating_unit',
+        'operating_unit',
     ],
     'data': [
         'security/ir.model.access.csv',
@@ -31,6 +31,7 @@
         'views/vms_order_view.xml',
         'views/fleet_vehicle_view.xml',
         'views/operating_unit_view.xml',
+        'views/res_config_settings.xml',
         'wizards/vms_wizard_maintenance_order_view.xml',
         'data/ir_sequence_data.xml',
         'data/stock_picking_type_data.xml',

@@ -6,7 +6,7 @@ from odoo import fields, models
 
 class VmsProgram(models.Model):
     _name = 'vms.program'
-    _inherit = ['mail.thread', 'ir.needaction_mixin']
+    _inherit = ['mail.thread']
     _order = 'name asc'
 
     cycle_ids = fields.Many2many(

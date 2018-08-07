@@ -103,7 +103,7 @@
             </calendar>
         </field>
     </record>
-    <record model='ir.ui.view' id='vms_order_gantt_view'>
+    <!-- <record model='ir.ui.view' id='vms_order_gantt_view'>
         <field name='name'>VMS Order Gantt View</field>
         <field name='model'>vms.order</field>
         <field name='arch' type='xml'>
@@ -111,13 +111,13 @@
                 <field name="name"/>
             </gantt>
         </field>
-    </record>
+    </record> -->
     <record id="action_vms_order" model="ir.actions.act_window">
         <field name="name">Order</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">vms.order</field>
         <field name="view_type">form</field>
-        <field name="view_mode">tree,form,calendar,gantt</field>
+        <field name="view_mode">tree,form,calendar</field>
     </record>
     <menuitem action="action_vms_order" id="vms_order_menu" parent="menu_vms_maintenance" sequence="10"/>
 </odoo>

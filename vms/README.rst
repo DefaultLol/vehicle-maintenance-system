@@ -22,20 +22,6 @@ It also can manage:
 ===================
 ...
 
-Installation
-============
-
-To install this module, you need to:
-
-#. Do this ...
-
-Configuration
-=============
-
-To configure this module, you need to:
-
-#. Go to ...
-
 Usage
 =====
 
@@ -71,6 +57,7 @@ Contributors
 * Sarai Osorio <sarai.osorio@jarsa.com.mx>
 * Oscar Garza <oscar.garza@jarsa.com.mx>
 * Miguel Ruiz <miguel.ruiz@jarsa.com.mx>
+* Isabel Esparza <isabel.esparza@jarsa.com.mx>
 
 Maintainer
 ----------

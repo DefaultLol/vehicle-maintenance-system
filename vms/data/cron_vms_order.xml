@@ -2,12 +2,14 @@
 <odoo noupdate="1">
     <record id="ir_cron_vms_order" model="ir.cron">
         <field name="name">Preventive Maintenance</field>
+        <field name='active' eval='True'/>
+        <field name='priority'>5</field>
         <field name="interval_number">1</field>
         <field name="interval_type">days</field>
         <field name="numbercall">-1</field>
+        <field name='state'>code</field>
         <field eval="False" name="doall"/>
-        <field name="model">fleet.vehicle</field>
-        <field name="function">cron_vehicle_maintenance</field>
-        <field name="args"></field>
+        <field name='model_id' ref='vms.model_fleet_vehicle'/>
+        <field name='code'>model.cron_vehicle_maintenance()</field>
     </record>
 </odoo>

@@ -30,10 +30,10 @@ class VmsProductLine(models.Model):
     order_line_id = fields.Many2one(
         'vms.order.line',
         string='Activity')
-    procurement_ids = fields.One2many(
-        'procurement.order',
-        'vms_product_line_id',
-        string='Procurement Orders',)
+    # procurement_ids = fields.One2many(
+    #     'procurement.order',
+    #     'vms_product_line_id',
+    #     string='Procurement Orders',)
     external_spare_parts = fields.Boolean(
         string='Is External Spare Part?',
     )
@@ -58,7 +58,7 @@ class VmsProductLine(models.Model):
             'product_uom': self.product_uom_id.id,
             'company_id': self.env.user.company_id.id,
             'group_id': group_id,
-            'vms_product_line_id': self.id,
+            # 'vms_product_line_id': self.id,
             'date_planned': fields.Datetime.now(),
             'location_id': prod_loc_id.id,
             'route_ids': self.product_id.route_ids and [

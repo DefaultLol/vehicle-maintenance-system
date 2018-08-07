@@ -7,7 +7,7 @@ from odoo.exceptions import ValidationError
 
 class VmsReport(models.Model):
     _description = 'VMS Reports'
-    _inherit = ['mail.thread', 'ir.needaction_mixin']
+    _inherit = ['mail.thread']
     _name = 'vms.report'
 
     name = fields.Char(string='Number', readonly=True)
