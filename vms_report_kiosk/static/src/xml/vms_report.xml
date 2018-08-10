@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template xml:space="preserve">
+    <t t-name="PresenceIndicator">
+        <div id="oe_hr_attendance_status" class="fa fa-user">
+        </div>
+    </t>
+    
+    <!-- Main menu -->
+    <t t-name="VmsReportMyMainMenu">
+        <div class="o_vms_report_kiosk_mode_container o_app_switcher_background">
+            <div id="o_vms_alerts_container"/>
+            <div class="o_vms_report_kiosk_mode">
+                <h1>Welcome to <t t-esc="widget.company_name"/></h1>
+                <div id="o_vms_employee"></div>
+                <div id="o_vms_unit"></div>
+                <button class="btn btn-default btn_vms_report pull-right">Next<i class="fa fa-arrow-circle-right"/></button>
+            </div>
+            <div class="o_vms_report_clock"></div>
+        </div>
+    </t>
+
+    <!-- Driver List -->
+    <t t-name="VmsEmployeeList">
+        <select id="select_employee_id" class="form-control">
+            <option disabled="1" selected="1" value="">select driver</option>
+            <t t-foreach="employees" t-as="employee">
+                <option t-att-value='employee.id'><t t-esc='employee.name'/></option>
+            </t>
+        </select>
+    </t>
+
+    <!-- Unit List -->
+    <t t-name="VmsUnitList">
+        <select id="select_unit_id" class="form-control">
+            <option disabled="1" selected="1" value="">select unit</option>
+            <t t-foreach="units" t-as="unit">
+                <option t-att-value='unit.id'><t t-esc='unit.name'/></option>
+            </t>
+        </select>
+    </t>
+
+    <!-- HTML field -->
+    <t t-name="MyReportKioskMode">
+        <div class="o_vms_report_kiosk_mode_container o_app_switcher_background">
+            <div class="o_vms_report_kiosk_mode">
+                <h1>Welcome <t t-esc='widget.driver_name'/></h1>
+                <textarea class="fr-view" id="fr-textarea"/>
+                <button class="btn btn-default btn_vms_make_report">Next<i class="fa fa-arrow-circle-right"/></button>
+            </div>
+            <div class="o_vms_report_clock"></div>
+        </div>
+    </t>
+</template>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+   <!-- actions -->
+    <record id="vms_report_action_report" model="ir.actions.client">
+        <field name="name">Attendance</field>
+        <field name="tag">vms_report_action_report_kiosk</field>
+        <field name="target">main</field>
+    </record>
+
+    <!-- Menus -->
+    <menuitem id="menu_vms_report_root" name="Vms Report" sequence="90" web_icon="hr_attendance,static/description/icon.png"/>
+    <menuitem id="menu_vms_report" name="Check employee" parent="menu_vms_report_root" sequence="10" action="vms_report_action_report"/>
+</odoo>

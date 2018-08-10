@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="vms_report assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <!-- css Froala -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css"/>
+            <link href="/vms_report_kiosk/static/src/less/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+            <link href="/vms_report_kiosk/static/src/less/css/froala_style.css" rel="stylesheet" type="text/css" />
+            <!-- js Froala -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
+            <script type="text/javascript" src="/vms_report_kiosk/static/src/js/js/froala_editor.pkgd.min.js"></script>
+
+            <link rel="stylesheet" href="/vms_report_kiosk/static/src/less/vms_report.less"/>
+            <script type="text/javascript" src="/vms_report_kiosk/static/src/js/kiosk_mode.js"></script>
+        </xpath>
+    </template>
+</odoo>
